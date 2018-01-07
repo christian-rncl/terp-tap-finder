@@ -1,0 +1,10 @@
+form(class="ui form" method="POST" action="")
+    div(class="field")
+        div(class="ui search")
+            if notFound
+                div(class="ui pointing below red basic label")
+                    p Not found. Select from suggestions.
+            div(class="one ui fluid input" data-tooltip="Enter 3-4 letter building code or select from suggestions" data-variation="base" data-position="bottom center")
+                input#name.prompt(type='text', placeholder='Mathematics Building : MTH' name='name' value=( (undefined===building) ? '' : (building.name===null) ? building.code : building.name ))
+            div(class="results")
+            button.ui.button(type='submit') Submit

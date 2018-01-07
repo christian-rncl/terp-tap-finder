@@ -1,0 +1,25 @@
+extends layout
+block content
+    div(class='ui grid')
+        div(class="row")
+            h1 !{name}
+        div(class="row")
+            div(class='five wide column')
+            div(class='six wide column')
+                p
+                    h1= message
+                    if closest
+                        p
+                            h1= closest
+
+                p
+                    h3 Make another search:
+                include partials/form.pug
+            div(class='five wide column')
+        div(class="row")
+            div(class='five wide column')
+            div(class='six wide column')
+
+                p Christian Roncal 2017
+            div(class='five wide column')
+    include partials/footer.pug
