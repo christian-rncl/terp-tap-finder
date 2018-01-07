@@ -13,7 +13,7 @@ var users = require('./routes/users');
 
 //create mongodb connection
 var mongoose = require("mongoose");
-var mongoDB = 'mongodb://croncal:acciofountainaguamenti@ds237707.mlab.com:37707/terp-tap-finder';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://croncal:acciofountainaguamenti@ds237707.mlab.com:37707/terp-tap-finder';
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
