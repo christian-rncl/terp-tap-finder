@@ -2,10 +2,9 @@ extends layout
 
 block content
 	div(class='container')
-		div(class='ui grid')
+		div(class='ui center aligned grid')
 			div(class="row")
 			div(class="row")
-				div(class='five wide column')
 				div(class='six wide column')
 					h1(align='center') Find nearest water tap:
 					include partials/form.pug
@@ -14,6 +13,6 @@ block content
 							for error in errors
 								li!= error.msg
 					p
-						a(href="mailto:webmaster@example.com") Christian Roncal 2017
-				div(class='five wide column')
+						a(href="mailto:croncal@umd.edu") Christian Roncal 2017
+
 	include partials/footer.pug
