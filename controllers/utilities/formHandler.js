@@ -6,7 +6,7 @@ function parseBody(bodyName) {
     var identifier;
     var isCode = false;
 
-    if (bodyName.length > 4) {
+    if (bodyName.length > 5) {
         //must be processing the full building name
         identifier = bodyName.substr(0, bodyName.indexOf(':') - 1);
     } else {

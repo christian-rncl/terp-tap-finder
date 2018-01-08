@@ -13,7 +13,7 @@ exports.index_post = formHandler.handle_form('index');
 exports.nearestTap_get = (req, res, next) => {
     var bldg_code = req.params.code.toUpperCase();
     // res.send(bldg_code);
-    if(bldg_code.length < 7) {
+    if(bldg_code.length < 6) {
         // res.send(bldg_code.length);
         Building.findOne({'code': bldg_code})
             .exec(function(err, found) {
