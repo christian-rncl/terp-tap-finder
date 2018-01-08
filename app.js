@@ -9,7 +9,8 @@ var compression = require('compression');
 var helmet = require('helmet');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+
+//TODO: write 404 page
 
 //create mongodb connection
 var mongoose = require("mongoose");
