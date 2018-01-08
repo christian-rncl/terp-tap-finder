@@ -2,14 +2,10 @@ extends layout
 block content
     div(class='ui center aligned grid')
         div(class="row")
-            div(class="left aligned fifteen wide column")
-                p
-                    h1= message
-                    if closest
-                        p
-                            h1= closest
+            div(class='computer only left aligned six wide column')
+                include partials/nearest_body.pug
 
-                p
-                    h3 Make another search:
-                include partials/form.pug
+            div(class="mobile only left aligned fifteen wide column")
+                include partials/nearest_body.pug
+                
     include partials/footer.pug

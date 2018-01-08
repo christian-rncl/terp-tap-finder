@@ -1,10 +1,9 @@
-div(class='ui column')
-    p
-        h1= message
-        if closest
-            p
-                h1= closest
+p
+    h1= message
+    if closest
+        p
+            h1= closest
 
-    p
-        h3 Make another search:
-    include ./form.pug
+p
+    h3 Make another search:
+include form.pug
