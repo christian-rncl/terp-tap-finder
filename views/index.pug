@@ -5,14 +5,12 @@ block content
 		div(class='ui center aligned grid')
 			div(class="row")
 			div(class="row")
-				div(class='six wide column')
+				div(class='left aligned six wide column')
 					h1(align='center') Find nearest water tap:
 					include partials/form.pug
 					if errors
 						ul
 							for error in errors
 								li!= error.msg
-					p
-						a(href="mailto:croncal@umd.edu") Christian Roncal 2017
 
 	include partials/footer.pug

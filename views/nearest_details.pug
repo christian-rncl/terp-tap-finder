@@ -1,11 +1,8 @@
 extends layout
 block content
-    div(class='ui grid')
+    div(class='ui center aligned grid')
         div(class="row")
-            h1 !{name}
-        div(class="row")
-            div(class='five wide column')
-            div(class='six wide column')
+            div(class="left aligned six wide column")
                 p
                     h1= message
                     if closest
@@ -15,11 +12,4 @@ block content
                 p
                     h3 Make another search:
                 include partials/form.pug
-            div(class='five wide column')
-        div(class="row")
-            div(class='five wide column')
-            div(class='six wide column')
-                p
-                    a(href="mailto:webmaster@example.com") Christian Roncal 2017
-            div(class='five wide column')
     include partials/footer.pug
