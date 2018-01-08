@@ -2,15 +2,11 @@ extends layout
 
 block content
 	div(class='container')
-		div(class='ui center aligned grid')
-			div(class="row")
-			div(class="row")
-				div(class='left aligned six wide column')
-					h1(align='center') Find nearest water tap:
-					include partials/form.pug
-					if errors
-						ul
-							for error in errors
-								li!= error.msg
+
+		div(class='mobile only ui grid')
+			include partials/index_body.pug
+
+		div(class='computer only ui center aligned grid')
+			include partials/index_body.pug
 
 	include partials/footer.pug

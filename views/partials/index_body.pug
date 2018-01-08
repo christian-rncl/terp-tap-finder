@@ -1,0 +1,9 @@
+div(class="row")
+div(class="row")
+    div(class='left aligned six wide column')
+        h1(align='center') Find nearest water tap:
+        include ./form.pug
+        if errors
+            ul
+                for error in errors
+                    li!= error.msg
