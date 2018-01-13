@@ -14,7 +14,7 @@ var index = require('./routes/index');
 
 //create mongodb connection
 var mongoose = require("mongoose");
-var mongoDB = process.env.MONGODB_URI;
+var mongoDB = process.env.MONGODB_URI || 'mongodb://croncal:acciofountainaguamenti@ds237707.mlab.com:37707/terp-tap-finder';
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
